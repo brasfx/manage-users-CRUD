@@ -12,6 +12,8 @@ const TopBar = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
+    localStorage.clear();
+
     navigate('/login');
   };
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'), {
