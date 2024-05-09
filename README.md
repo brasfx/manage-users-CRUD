@@ -52,6 +52,13 @@ http://localhost:3001/users
 ```
 A aplicação também pode ser acessada remotamente pelo link: https://manage-users-crud.vercel.app/
 
+#### Acessando a aplicação
+Por padrão o único usuário de acesso é administrador. Use as seguintes credencias para entrar:
+ - Email: ``` admin@admin.com ```
+ - Senha: ``` admin ```
+
+Após acessar, crie um usuário padrão (sem acessos de administrador) para conseguir válidar as diferenças de tipos de acesso.
+
 ## Tecnologias
  - React
  - TypeScript
