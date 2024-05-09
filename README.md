@@ -18,6 +18,8 @@ git@github.com:brasfx/manage-users-CRUD.git
 ```
 gh repo clone brasfx/manage-users-CRUD
 ```
+#### Arquivos necessários:
+Crie um arquivo .env na raiz do projeto, insira a variável de ambiente `VITE_BASE_URL=http://localhost:3001` ou atualize o arquivo .env.example para .env e insira a variável de ambiente `VITE_BASE_URL=http://localhost:3001`
 
 #### Para usar o projeto localmente, siga os seguintes passos:
 
@@ -36,13 +38,13 @@ npm run server
 #### As rotas de acessos são:
 - Aplicação
 ```
-http://localhost:5173/
+http://localhost:5173
 ```
 - Servidor
 
 Index:
 ```js
-http://localhost:3001/
+http://localhost:3001
 ```
 Endpoints:
 ```
