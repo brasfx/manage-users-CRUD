@@ -1,4 +1,3 @@
-import { getAllUsers } from '@services/api';
 import { FC, useState, useEffect, ReactElement } from 'react';
 import { Navigate } from 'react-router-dom';
 

@@ -1,7 +1,6 @@
-import { FC, useState, SetStateAction } from 'react';
+import { FC, SetStateAction } from 'react';
 
 import {
-  Button,
   Fade,
   FormControl,
   FormControlLabel,

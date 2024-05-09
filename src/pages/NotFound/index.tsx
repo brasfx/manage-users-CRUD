@@ -1,6 +1,5 @@
 import { Typography } from '@mui/material';
 import { Container, RedirectButton } from './styles';
-import { Link } from 'react-router-dom';
 
 export const NotFound = () => {
   return (
