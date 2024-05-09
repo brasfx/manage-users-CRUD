@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "active": true,
+      "userType": "ADMIN",
+      "name": "Admin",
+      "lastName": "da conta",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "submit": null,
+      "id": "35c1"
+    }
+  ]
+}
