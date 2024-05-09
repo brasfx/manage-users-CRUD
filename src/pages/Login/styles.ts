@@ -1,5 +1,6 @@
 import { styled } from '@mui/material/styles';
-import { Box, Button } from '@mui/material';
+import { Box } from '@mui/material';
+import { LoadingButton } from '@mui/lab';
 
 export const Root = styled(Box)`
   display: flex;
@@ -33,7 +34,7 @@ export const Content = styled('div')`
   gap: 32px;
 `;
 
-export const SubmitButton = styled(Button)`
+export const SubmitButton = styled(LoadingButton)`
   height: 40px;
   max-width: 300px;
   width: 100%;

@@ -29,7 +29,10 @@ export const Login = () => {
     event.preventDefault();
   };
 
+  const [loading, setLoading] = useState(false);
+
   const handleLogin = async () => {
+    setLoading(true);
     try {
       const response = await login();
       const validateUser = response.find((user: any) => user.email === email);
@@ -52,6 +55,14 @@ export const Login = () => {
       }
     } catch (error) {
       console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === 'Enter') {
+      handleLogin();
     }
   };
 
@@ -79,6 +90,7 @@ export const Login = () => {
             label="Senha"
             placeholder="Insira sua senha de acesso"
             color="info"
+            onKeyDown={handleKeyPress}
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -95,6 +107,7 @@ export const Login = () => {
             }}
           />
           <SubmitButton
+            loading={loading}
             type="submit"
             variant="contained"
             color="success"

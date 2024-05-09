@@ -12,10 +12,7 @@ const TopBar = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.clear();
-    setTimeout(() => {
-      navigate('/login');
-    }, 1000);
+    navigate('/login');
   };
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'), {
     defaultMatches: true,
